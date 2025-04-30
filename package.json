@@ -1,0 +1,51 @@
+{
+  "name": "zachsrecovery",
+  "version": "0.0.1",
+  "description": "**Self-Companion** is a modular desktop app designed to help people like me — neurodivergent, trauma survivors, people rebuilding their lives — manage their thoughts, emotions, tasks, and personal growth in one private, focused space.",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "dev": "electron .",
+    "build": "electron-builder",
+    "postinstall": "electron-builder install-app-deps",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CMGCoderTobias/ZachsRecovery.git"
+  },
+  "author": "Tobias Conliffe",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/CMGCoderTobias/ZachsRecovery/issues"
+  },
+  "homepage": "https://github.com/CMGCoderTobias/ZachsRecovery#readme",
+  "build": {
+    "appId": "com.cmgcodertobias.zachsrecovery",
+    "productName": "Self-Companion",
+    "directories": {
+      "output": "dist"
+    },
+    "files": [
+      "app/**/*",
+      "main.js",
+      "package.json"
+    ],
+    "extraResources": [
+      {
+        "from": "data/",
+        "to": "data/",
+        "filter": ["**/*"]
+      }
+    ],
+    "mac": {
+      "category": "public.app-category.productivity"
+    },
+    "win": {
+      "target": "nsis"
+    },
+    "linux": {
+      "target": "AppImage"
+    }
+  }
+}
