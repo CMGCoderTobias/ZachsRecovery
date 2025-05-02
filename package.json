@@ -2,7 +2,7 @@
   "name": "zachsrecovery",
   "version": "0.0.1",
   "description": "**Self-Companion** is a modular desktop app designed to help people like me — neurodivergent, trauma survivors, people rebuilding their lives — manage their thoughts, emotions, tasks, and personal growth in one private, focused space.",
-  "main": "main.js",
+  "main": "app/core/main.js",
   "scripts": {
     "start": "electron .",
     "dev": "electron .",

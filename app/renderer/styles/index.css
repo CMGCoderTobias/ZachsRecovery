@@ -1,0 +1,13 @@
+/* app/renderer/styles/default.css */
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f3f3f3;
+    color: #333;
+  }
+  
+  #app {
+    padding: 2rem;
+  }
+  
