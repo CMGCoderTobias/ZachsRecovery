@@ -8,6 +8,7 @@ build/
 # User data (data folder should exist, but ignore its contents)
 data/*
 !data/
+!data/default.txt
 
 # Personal dev files
 Vision of the App.txt
